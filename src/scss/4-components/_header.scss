@@ -1,0 +1,21 @@
+$this: 'c-header' !global;
+
+.#{$this} {
+  padding: 20px;
+  background-color: $BLACK;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    margin: 0;
+    font: {
+      size: 24px;
+      family: $FONT_REGULAR;
+    }
+    color: $WHITE;
+    text-align: center;
+    text-decoration: none;
+  }
+}

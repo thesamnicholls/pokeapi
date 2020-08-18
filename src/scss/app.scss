@@ -1,13 +1,20 @@
+// 0 - Core
 @import '0-core/breakpoints';
 @import '0-core/vendor';
 
+// 1- Base
 @import '1-base/normalisation';
 @import '1-base/colours';
 @import '1-base/typopgraphy';
 
+// 2 - Layots
 @import '2-layouts/grid';
 
+// 3 - Objects
 @import '3-objects/main';
+@import '3-objects/page';
 @import '3-objects/row';
 
-@import '4-components/card';
+// 4 - Components
+@import '4-components/header';
+@import '4-components/tabs';

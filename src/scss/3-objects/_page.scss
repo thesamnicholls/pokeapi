@@ -1,0 +1,13 @@
+$this: 'o-page' !global;
+
+.#{$this} {
+  margin-top: 30px;
+
+  &__title {
+    font: {
+      size: 32px;
+      family: $FONT_REGULAR;
+    }
+    color: $BLACK;
+  }
+}

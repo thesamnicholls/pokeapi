@@ -1,0 +1,23 @@
+$this: 'c-tabs' !global;
+
+.#{$this} {
+  display: flex;
+  flex-direction: revert;
+  justify-content: center;
+
+  &__tab {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid $BLACK;
+    font: {
+      size: 20px;
+      family: $FONT_REGULAR;
+    }
+    box-shadow: none;
+    cursor: pointer;
+
+    &--margin-right {
+      margin-right: 20px;
+    }
+  }
+}
