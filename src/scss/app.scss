@@ -7,7 +7,8 @@
 @import '1-base/colours';
 @import '1-base/typopgraphy';
 
-// 2 - Layots
+// 2 - Layouts
+@import '2-layouts/container';
 @import '2-layouts/grid';
 
 // 3 - Objects
@@ -16,5 +17,8 @@
 @import '3-objects/row';
 
 // 4 - Components
+@import '4-components/card';
+@import '4-components/error';
 @import '4-components/header';
-@import '4-components/tabs';
+@import '4-components/loading';
+@import '4-components/pagination';

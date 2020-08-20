@@ -1,0 +1,13 @@
+$this: 'c-error' !global;
+
+.#{$this} {
+  display: flex;
+
+  &__text {
+    font: {
+      size: 24px;
+      family: $FONT_REGULAR;
+    }
+    margin: 30px auto;
+  }
+}

@@ -1,7 +1,11 @@
 $this: 'o-page' !global;
 
 .#{$this} {
-  margin-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
 
   &__title {
     font: {

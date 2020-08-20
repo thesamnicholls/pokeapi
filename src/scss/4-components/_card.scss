@@ -1,0 +1,26 @@
+$this: 'c-card' !global;
+
+.#{$this} {
+  max-width: 200px;
+  min-height: 200px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 11px rgba($BLACK, 0.2);
+  }
+
+  &__title {
+    margin: 5px 0 0 0;
+    font: {
+      size: 20px;
+      weight: bold;
+      family: $FONT_REGULAR;
+    }
+    color: $BLACK;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}

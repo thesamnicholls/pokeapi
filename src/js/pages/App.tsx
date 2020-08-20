@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from '../components/Header'
-import Tabs from '../components/Tabs'
-import PokemonList from '../components/PokemonList'
-import LocationList from '../components/LocationList'
+import List from '../components/List'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Detail from '../components/Detail'
+import { ReactQueryDevtools } from 'react-query-devtools'
 
 const App = (): JSX.Element => {
-  const [page, setPage] = useState('pokemon')
-
   return (
-    <div>
-      <Header />
-      <div className='o-main'>
-        <Tabs setPage={setPage} />
-        <div className='l-container'>
-          {page === 'pokemon' ? <PokemonList /> : <LocationList />}
-        </div>
-      </div>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path='/pokeapi' component={List} />
+          <Route path='/pokeapi/:id' component={Detail} />
+        </Switch>
+      </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </React.Fragment>
   )
 }
 
